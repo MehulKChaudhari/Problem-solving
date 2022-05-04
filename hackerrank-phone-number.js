@@ -19,6 +19,10 @@ function getPhoneNumber(s) {
     // Write your code here
     const numbers = s.split(' ')
     let digits = "";
+
+        if(s.length ===0){
+        return 0;
+    }
     numbers.forEach((element,index) => {
         if(stringNumbers.hasOwnProperty(element) && !repetations.hasOwnProperty(numbers[index-1])){
             console.log("syri",stringNumbers[element])
@@ -36,8 +40,8 @@ function getPhoneNumber(s) {
         }
     });
 
-    console.log("digits",typeof(digits), typeof(parseInt(digits,10)))
+    console.log("digits",typeof(digits), parseInt(digits,10))
 
 }
 
-getPhoneNumber('two one nine double nine double six triple eight')
+getPhoneNumber('six double two eight nine five six one three four triple zero')
