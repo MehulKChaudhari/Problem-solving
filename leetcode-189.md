@@ -50,3 +50,27 @@ class Solution {
     }
 }
 ```
+
+Optimised solution 
+
+```JAVA 
+class Solution {
+    public void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    public void rotate(int[] nums, int k) {
+        int rot = k % nums.length;
+        int n = nums.length;
+        reverse(nums, 0, n - 1);
+        reverse(nums, 0, rot - 1);
+        reverse(nums, rot, n - 1);
+    }
+}
+```
