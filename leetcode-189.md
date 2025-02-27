@@ -1,7 +1,7 @@
 Given an integer array nums, rotate the array to the right by k steps, where k is non - negative.
 
 ### Question 
-[link](https://leetcode.com/problems/majority-element/)
+[link](https://leetcode.com/problems/rotate-array/)
 
 ### Solution 
 
